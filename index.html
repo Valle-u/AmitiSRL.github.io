@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título y Descripción para SEO y buscadores -->
+    <title>AMITI S.R.L.</title>
+    <link rel="icon" type="image/png" href="img/logotipo.png">
+    <link rel="stylesheet" href="styles2.css">
+    <meta name="description" content="Empresa argentina dedicada a la comercialización de productos electrónicos, electrodomésticos, equipos de computación y telefonía.">
+
+    <!-- Metaetiquetas del Protocolo Open Graph para Facebook y otras redes sociales -->
+    <meta property="og:title" content="AMITI S.R.L. - Los mejores productos" />
+    <meta property="og:description" content="AMITI S.R.L. es una compañía argentina con sede en la Ciudad Autónoma de Buenos Aires, dedicada a la compraventa, importación, exportación, representación, fabricación, distribución y comercialización de productos electrónicos, electrodomésticos, artículos de computación, telefonía, hogar, juguetería y bazar. Su misión es ofrecer soluciones modernas y confiables dentro del sector tecnológico, combinando variedad, eficiencia y una operación que responde a estándares comerciales actuales. La empresa apuesta a consolidarse en el mercado mediante una propuesta de valor enfocada en calidad, disponibilidad y capacidad operativa para abastecer tanto a consumidores como a empresas." />
+    <meta property="og:url" content="[URL del sitio web]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AMITI S.R.L." />
+
+    <!-- Datos Estructurados JSON-LD para describir la empresa -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AMITI S.R.L.",
+        "url": "[URL del sitio web]",
+        "logo": "[URL del logo]",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "[Número de teléfono]",
+            "contactType": "customer service",
+            "email": "[Email de contacto]"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lavalle 392, 8° piso",
+            "addressLocality": "Ciudad Autónoma de Buenos Aires (CABA)",
+            "postalCode": "C1047AAG",
+            "addressCountry": "Argentina"
+        }
+    }
+    </script>
+</head>
+<body>
+    
+    <header class="header-landing">
+        <!-- Envolver el logo en un enlace a la página principal es una buena práctica -->
+        <nav class="main-nav" id="main-nav">
+            <a href="index.html" class="wrap-logo">
+                <img src="img/logotipo.png" alt="AMITI S.R.L. Logo" class="logo-header">
+            </a>
+
+            <ul class="nav__ul"> 
+                <li class="nav__item"><a href="#contact-form" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="#product-display-section" class="nav__link">Catalogo</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" id="terms-btn">Terminos y condiciones</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" id="privacy-btn">Politica de privacidad</a></li>
+                <li class="nav__item">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode"></button>
+                </li>
+            </ul>
+
+            <a href="#" class="nav__link link--login" id="login-btn">Log In</a>
+        </nav>
+
+        <button class="hamburger-menu" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+        </button>
+    </header>
+    
+    <!-- 1º Section -->
+
+    <section class="hero-section">
+        <div class="wrap-hero-section">
+            <h1>AMITI S.R.L.</h1>
+            <p>AMITI S.R.L. es una compañía argentina con sede en la Ciudad Autónoma de Buenos Aires, dedicada a la compraventa, importación, exportación, representación, fabricación, distribución y comercialización de productos electrónicos, electrodomésticos, artículos de computación, telefonía, hogar, juguetería y bazar. Su misión es ofrecer soluciones modernas y confiables dentro del sector tecnológico, combinando variedad, eficiencia y una operación que responde a estándares comerciales actuales. La empresa apuesta a consolidarse en el mercado mediante una propuesta de valor enfocada en calidad, disponibilidad y capacidad operativa para abastecer tanto a consumidores como a empresas.</p>
+            <p class="hero-subtitle">Más de 5.000 clientes satisfechos</p>
+            <div class="hero-rating">
+                <span>⭐⭐⭐⭐⭐</span>
+                <span class="hero-rating-text">Valoración 5/5"</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos en Pantalla -->
+    <section id="product-display-section" class="product-display-section">
+        <div class="wrap-title-section">
+            <h2>Nuestros Productos</h2>
+        </div>
+        <div class="product-catalog-grid">
+            <!-- Producto 1 -->
+            <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                <img src="img/producto1.jpg" alt="Un smartphone premium de bordes curvos, módulo de cámara de triple lente y diseño minimalista futurista." class="product-image" itemprop="image">
+                <h4 class="product-name" itemprop="name">iPhone 17 – 256GB</h4>
+                <!-- Contenedor para la oferta del producto -->
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="ARS" />
+                    <p class="product-price" itemprop="price">$1.799.999 ARS</p>
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                </div>
+                <a href="#" class="product-buy-btn" itemprop="url">Comprar ahora</a>
+                <!-- Propiedades adicionales recomendadas (ocultas para el usuario) -->
+                <div itemprop="description" style="display:none;">El iPhone 17 representa la nueva generación de smartphones de alta gama. Su pantalla OLED de última tecnología ofrece colores más intensos y una nitidez impresionante. Con chip A19 Bionic, cámara cuádruple con modo nocturno avanzado y batería de larga duración, es el dispositivo ideal para quienes buscan rendimiento, diseño y fotografía profesional en un solo equipo.</div>
+                <div itemprop="brand" itemscope itemtype="http://schema.org/Brand" style="display:none;">
+                    <meta itemprop="name" content="AMITI S.R.L." />
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                <img src="img/producto2.jpg" alt="Una placa de video robusta, con diseño negro y plateado, ventiladores dobles o triples y estética gamer de alta gama." class="product-image" itemprop="image">
+                <h4 class="product-name" itemprop="name">NVIDIA GeForce RTX 4080 – 16GB GDDR6X</h4>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="ARS" />
+                    <p class="product-price" itemprop="price">$2.349.999 ARS</p>
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                </div>
+                <a href="#" class="product-buy-btn" itemprop="url">Comprar ahora</a>
+                <div itemprop="description" style="display:none;">La RTX 4080 es una de las tarjetas gráficas más poderosas del mercado. Con arquitectura Ada Lovelace, 16GB de memoria GDDR6X y soporte para DLSS 3, ofrece un rendimiento excepcional en gaming 4K, renderizado 3D, inteligencia artificial y trabajo profesional de alto nivel. Su eficiencia energética y su potencia la convierten en la opción ideal para creadores y jugadores exigentes.</div>
+                <div itemprop="brand" itemscope itemtype="http://schema.org/Brand" style="display:none;">
+                    <meta itemprop="name" content="AMITI S.R.L." />
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                <img src="img/producto3.jpg" alt="Consola de diseño blanco y negro, líneas curvas y base vertical, acompañada por el mando DualSense." class="product-image" itemprop="image">
+                <h4 class="product-name" itemprop="name">Sony PlayStation 5 – Edición Estándar</h4>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="ARS" />
+                    <p class="product-price" itemprop="price">$849.999 ARS</p>
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                </div>
+                <a href="#" class="product-buy-btn" itemprop="url">Comprar ahora</a>
+                <div itemprop="description" style="display:none;">La PlayStation 5 ofrece una experiencia de juego de nueva generación con gráficos 4K, tiempos de carga ultrarrápidos gracias a su SSD y el innovador control DualSense con respuesta háptica avanzada. Es ideal para jugadores que buscan inmersión total, rendimiento fluido y una biblioteca de juegos exclusivos de primer nivel.</div>
+                <div itemprop="brand" itemscope itemtype="http://schema.org/Brand" style="display:none;">
+                    <meta itemprop="name" content="AMITI S.R.L." />
+                </div>
+            </div>
+            <!-- Puedes añadir más productos aquí -->
+        </div>
+    </section>
+
+    <!-- 3º Section -->
+
+    <section id="contact-form" class="section two-column-section form">
+
+            <div class="form-container">
+                <div class="form-content">
+                    <h3>Formulario de Contacto</h3>
+
+                    <form action="procesar_formulario.php" method="post" class="form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Tu número de teléfono" required="">
+                        </div>
+                        <button type="submit" class="cta-a">Enviar</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-column animate-on-scroll">
+                <a href="index.html">
+                    <img src="img/logotipo.png" alt="AMITI S.R.L. Logo" class="logo-footer">
+                </a>
+                <p>AMITI S.R.L., empresa argentina dedicada a la comercialización de productos electrónicos y tecnológicos..</p>
+            </div>
+            <div class="footer-column animate-on-scroll">
+                <h4>AMITI S.R.L.</h4>
+                <ul>
+                    <li><a href="#contact-form">Contacto</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-creds">
+            <p>© 2025 AMITI S.R.L.. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="form-content">
+                <h3>Inicia sesión</h3>
+
+                <form action="procesar_formulario.php" method="post" class="form">
+                    <div class="form-group">
+                        <label for="modal-email-login">Correo electrónico:</label>
+                        <input type="email" name="email" id="modal-email-login" placeholder="ejemplo@correo.com" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-password-login">Contraseña:</label>
+                        <input type="password" name="password" id="modal-password-login" placeholder="Tu contraseña" required="">
+                    </div>
+                    <button type="submit" class="cta-a">Iniciar sesión</button>
+					<div class="form-group">
+						<p>¿No tienes una cuenta? <a href="#" id="register-link">Regístrate</a></p>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal de Registro -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="form-content">
+                <h3>Crea tu cuenta</h3>
+
+                <form action="procesar_formulario.php" method="post" class="form">
+                    <div class="form-group">
+                        <label for="modal-nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="modal-nombre" placeholder="Escribe tu nombre" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="modal-apellido" placeholder="Escribe tu apellido" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-email">Correo electrónico:</label>
+                        <input type="email" name="email" id="modal-email" placeholder="ejemplo@correo.com" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-telefono">Número de teléfono:</label>
+                        <input type="tel" name="telefono" id="modal-telefono" placeholder="Tu número de teléfono" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-password">Contraseña:</label>
+                        <input type="password" name="password" id="modal-password" placeholder="Crea una contraseña" required="">
+                    </div>
+                    <button type="submit" class="cta-a">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Términos y Condiciones -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="form-content text-content">
+                <h3>Términos y Condiciones de Uso</h3>
+                <p>Última actualización: [Fecha de actualización]</p>
+                
+                <p>Bienvenido/a a AMITI S.R.L.. Al acceder y utilizar nuestro sitio web [URL del sitio web], usted acepta los presentes Términos y Condiciones. Le recomendamos leerlos cuidadosamente antes de realizar una compra o utilizar nuestros servicios.</p>
+                
+                <h4>1. Objeto</h4>
+                <p>AMITI S.R.L. es una plataforma dedicada a Compraventa, importación, exportación, representación, fabricación, distribución y comercialización de productos electrónicos, electrodomésticos, artículos de computación, telefonía, hogar, juguetería y bazar.. Estos términos rigen el uso del sitio y la relación entre la empresa y sus usuarios.</p>
+                
+                <h4>2. Uso del Sitio</h4>
+                <p>El usuario se compromete a utilizar el sitio de manera responsable, de acuerdo con la ley y las buenas costumbres. Queda prohibido cualquier uso con fines ilícitos, fraudulentos o que pueda dañar la imagen de AMITI S.R.L. o los derechos de terceros.</p>
+                
+                <h4>3. Productos</h4>
+                <p>Todos los productos y servicios se describen con el mayor detalle posible. Las imágenes son ilustrativas y pueden presentar variaciones menores respecto al producto final.</p>
+                <p>La disponibilidad de los productos está sujeta a stock. En caso de que un artículo se agote tras una compra, se notificará al cliente para ofrecer una alternativa o el reembolso correspondiente.</p>
+                
+                <h4>4. Precios y Pagos</h4>
+                <p>Todos los precios están expresados en ARS e incluyen los impuestos aplicables, salvo que se indique lo contrario.</p>
+                <p>Los métodos de pago aceptados son: [Enumerar métodos de pago aceptados].</p>
+                <p>Nos reservamos el derecho de modificar los precios sin previo aviso, pero se respetará el valor vigente al momento de confirmar la compra.</p>
+                
+                <h4>5. Envíos y Entregas</h4>
+                <p>Realizamos envíos y entregas a [especificar zona de cobertura]. Los costos y plazos de entrega varían según la ubicación y serán informados durante el proceso de compra.</p>
+                <p>Una vez despachado el pedido, la responsabilidad por demoras o daños durante el transporte recae en la empresa de logística contratada.</p>
+                
+                <h4>6. Política de Cambios y Devoluciones</h4>
+                <p>Se aceptan cambios o devoluciones dentro de un plazo de [Número] días desde la recepción del producto, siempre que este se encuentre en su estado original y sin uso. [Aclaración opcional sobre la política].</p>
+                <p>Para gestionar un cambio o devolución, el cliente deberá contactarse a [Email de contacto].</p>
+                
+                <h4>7. Privacidad y Datos Personales</h4>
+                <p>El tratamiento de los datos personales se rige por nuestra Política de Privacidad, la cual forma parte integral de estos términos y cumple con la Ley N° 25.326 de Protección de Datos Personales.</p>
+                
+                <h4>8. Propiedad Intelectual</h4>
+                <p>Todo el contenido del sitio, incluyendo textos, imágenes, logotipos y diseños, es propiedad de AMITI S.R.L. y está protegido por las leyes de propiedad intelectual. Queda prohibida su reproducción total o parcial sin autorización expresa.</p>
+                
+                <h4>9. Modificaciones de los Términos</h4>
+                <p>AMITI S.R.L. se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las actualizaciones se publicarán en esta sección y entrarán en vigencia de forma inmediata.</p>
+                
+                <h4>10. Contacto</h4>
+                <p>Para cualquier consulta relacionada con estos términos, puede contactarnos a través de:</p>
+                <ul>
+                    <li>Correo: [Email de contacto]</li>
+                    <li>Teléfono: [Número de teléfono]</li>
+                    <li>Dirección: Lavalle 392, 8° piso</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Política de Privacidad -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="form-content text-content">
+                <h3>Política de Privacidad</h3>
+                <p>Última actualización: [Fecha de actualización]</p>
+
+                <p>La presente Política de Privacidad describe cómo se recopila, utiliza, almacena y protege la información personal de los usuarios que interactúan con este sitio web (en adelante, “el Sitio”). Al navegar o utilizar los servicios disponibles, el usuario acepta las prácticas detalladas a continuación.</p>
+
+                <h4>1. Responsable del Tratamiento de Datos</h4>
+                <p>El tratamiento de los datos personales será realizado por AMITI S.R.L., identificado con 30-71766316-7 (AMITI S.R.L.), con domicilio en Lavalle 392, 8° piso, y correo de contacto: [Email de contacto]. También se podrá contactar al responsable mediante el teléfono [Número de teléfono].</p>
+
+                <h4>2. Datos Personales que se Recopilan</h4>
+                <p>El Sitio puede recopilar las siguientes categorías de datos personales:</p>
+                <ul>
+                    <li>Datos proporcionados directamente por el usuario: nombre, correo electrónico, número de teléfono, dirección y cualquier información ingresada en formularios del Sitio.</li>
+                    <li>Datos de navegación: dirección IP, tipo de dispositivo, identificadores de cookies, páginas visitadas, tiempo de permanencia y otros datos analíticos.</li>
+                    <li>Datos obtenidos a través de plataformas publicitarias externas (incluyendo Facebook Business Manager): información necesaria para la correcta medición de conversiones, análisis de rendimiento de campañas y segmentación publicitaria.</li>
+                </ul>
+
+                <h4>3. Finalidades del Tratamiento de Datos</h4>
+                <p>Los datos personales podrán ser utilizados con las siguientes finalidades:</p>
+                <ul>
+                    <li>Proveer los servicios ofrecidos en el Sitio.</li>
+                    <li>Procesar consultas, solicitudes, registros o formularios enviados por el usuario.</li>
+                    <li>Implementar estrategias de marketing, remarketing y publicidad digital.</li>
+                    <li>Medir y analizar el rendimiento de campañas publicitarias.</li>
+                    <li>Optimizar la experiencia del usuario en el Sitio.</li>
+                    <li>Cumplir con obligaciones legales.</li>
+                </ul>
+
+                <h4>4. Uso de Cookies y Tecnologías Similares</h4>
+                <p>El Sitio utiliza cookies y tecnologías similares para:</p>
+                <ul>
+                    <li>Recordar preferencias del usuario.</li>
+                    <li>Analizar patrones de comportamiento.</li>
+                    <li>Mostrar anuncios personalizados en plataformas externas, incluidas herramientas de Meta (Facebook e Instagram).</li>
+                </ul>
+                <p>El usuario puede configurar su navegador para rechazar cookies, aunque esto puede afectar algunas funcionalidades del Sitio.</p>
+
+                <h4>5. Compartición de Datos</h4>
+                <p>Los datos personales podrán ser compartidos únicamente en los siguientes casos:</p>
+                <ul>
+                    <li>Con proveedores de servicios vinculados al funcionamiento del Sitio (por ejemplo, hosting, analíticas, email marketing).</li>
+                    <li>Con plataformas publicitarias como Meta, para el uso de herramientas de medición y remarketing.</li>
+                    <li>Cuando exista un requerimiento legal, administrativo o judicial.</li>
+                </ul>
+                <p>En ningún caso se venderán, alquilarán o cederán los datos personales a terceros con fines comerciales ajenos a lo establecido en esta política.</p>
+
+                <h4>6. Conservación de los Datos</h4>
+                <p>Los datos serán almacenados por el tiempo necesario para cumplir con los fines para los cuales fueron recopilados, o según lo exijan las normativas aplicables.</p>
+
+                <h4>7. Derechos del Usuario</h4>
+                <p>El usuario podrá ejercer en cualquier momento los siguientes derechos:</p>
+                <ul>
+                    <li>Acceso a sus datos personales.</li>
+                    <li>Rectificación de datos incorrectos o incompletos.</li>
+                    <li>Solicitud de eliminación de datos cuando sea legalmente posible.</li>
+                    <li>Oposición al tratamiento de datos con fines de marketing.</li>
+                    <li>Solicitud de limitación del tratamiento.</li>
+                </ul>
+                <p>Para ejercer estos derechos, deberá enviar un correo a [Email de contacto] indicando su nombre completo y el pedido correspondiente.</p>
+
+                <h4>Procedimiento para la Eliminación de Datos Personales</h4>
+                <p>En AMITI S.R.L. respetamos su privacidad y cumplimos con la Ley 25.326 de Protección de Datos Personales. Si desea que eliminemos sus datos personales, puede solicitarlo en cualquier momento.</p>
+                <p><strong>¿Qué datos podemos eliminar?</strong></p>
+                <ul>
+                    <li>Número de teléfono vinculado a nuestros canales de comunicación.</li>
+                    <li>Nombre y correo electrónico enviados a través de formularios.</li>
+                    <li>Historial de consultas o conversaciones (si corresponde).</li>
+                </ul>
+                <p><strong>¿Cómo solicitar la eliminación de sus datos?</strong></p>
+                <p>Envíe un correo electrónico a <strong>[Email de contacto]</strong> con el asunto: "Solicitud de eliminación de datos personales". En el cuerpo del mensaje, incluya:</p>
+                <ul>
+                    <li>Su nombre completo.</li>
+                    <li>Número de teléfono o correo electrónico asociado a los datos.</li>
+                    <li>Una breve descripción de los datos que desea que eliminemos.</li>
+                </ul>
+                <p>Una vez recibida la solicitud, confirmaremos su recepción dentro de los próximos 5 días hábiles y procederemos a eliminar sus datos en un plazo no mayor a 15 días hábiles, conforme a la normativa vigente.</p>
+                <p><strong>Importante:</strong> No se requiere justificar la solicitud. La eliminación es gratuita y voluntaria. No almacenamos ni compartimos sus datos con terceros para fines no autorizados.</p>
+
+                <h4>8. Seguridad de la Información</h4>
+                <p>Se adoptan medidas técnicas y organizativas diseñadas para proteger los datos personales frente a pérdida, acceso no autorizado, divulgación o manipulación.</p>
+                <p>No obstante, ningún sistema es completamente infalible. El usuario reconoce que existen riesgos inherentes al uso de plataformas digitales.</p>
+
+                <h4>9. Enlaces a Sitios de Terceros</h4>
+                <p>El Sitio puede contener enlaces a páginas externas cuya gestión es independiente. Esta Política de Privacidad no cubre el tratamiento de datos realizado por dichos sitios.</p>
+
+                <h4>10. Publicidad y Medición con Facebook (Meta)</h4>
+                <p>El Sitio puede utilizar herramientas de Meta, como el píxel de Facebook y las conversiones personalizadas, con fines de análisis y remarketing.</p>
+                <p>Meta puede usar ciertos datos para mejorar la personalización de anuncios, siempre bajo sus propias políticas de privacidad. El usuario puede consultar más información en las plataformas correspondientes.</p>
+
+                <h4>11. Modificaciones a esta Política de Privacidad</h4>
+                <p>El responsable podrá actualizar esta Política en cualquier momento. Cuando esto ocurra, se publicará la nueva versión en este mismo apartado con su fecha de actualización.</p>
+                <p>Se recomienda revisar periódicamente esta sección para conocer posibles cambios.</p>
+
+                <h4>12. Contacto</h4>
+                <p>Para consultas relacionadas con esta Política de Privacidad, los usuarios pueden escribir a:</p>
+                <ul>
+                    <li>Correo: [Email de contacto]</li>
+                    <li>Teléfono: [Número de teléfono]</li>
+                    <li>Dirección: Lavalle 392, 8° piso</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <!-- Datos Estructurados JSON-LD para la Empresa y Productos -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AMITI S.R.L.",
+    "url": "[URL del sitio web]",
+    "logo": "[URL del logo]",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "[Número de teléfono]",
+        "contactType": "customer service",
+        "email": "[Email de contacto]"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lavalle 392, 8° piso",
+        "addressLocality": "Ciudad Autónoma de Buenos Aires (CABA)",
+        "postalCode": "C1047AAG",
+        "addressCountry": "Argentina"
+    },
+    "sameAs": [
+        "[URL de Facebook]",
+        "[URL de Instagram]",
+        "[URL de Twitter/X]"
+    ]
+    }
+    </script>
+
+</body>
+</html>
